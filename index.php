@@ -1,5 +1,5 @@
 <?php
-$version = "1.0";
+$version = "1.1";
 
 $apiCommand = filter_input(INPUT_GET, "apiCommand");
 if ($apiCommand == "getnames") {
@@ -10,7 +10,8 @@ if ($apiCommand == "getnames") {
     if ($handle = opendir($folder)) {
         while (false !== ($file = readdir($handle))) {
             if ($file != "." && $file != "..") {
-                $files[filemtime($file)] = $file;
+                //$files[filemtime($file)] = $file;
+                $files [$file]= $file;
             }
         }
 
@@ -111,6 +112,7 @@ if ($apiCommand == "getnames") {
                     $("#imgData").html("Loading images list...");
                     var jqxhr = $.ajax("index.php?apiCommand=getnames")
                             .done(function (data) {
+                                //filesArray = (data.sort());
                                 filesArray = (data);
                                 $("#sliderX").attr("max", filesArray.length);
                                 updateImage();
@@ -141,10 +143,10 @@ if ($apiCommand == "getnames") {
 
                     $("#btnBack").click(goBack);
                     $("#btnForward").click(advance);
-                    
+
                     $("#btnFastRewind").click(goBackTen);
                     $("#btnFastForward").click(advanceTen);
-                    
+
 
                     $("#theImage").on("load", setTimer);
 
