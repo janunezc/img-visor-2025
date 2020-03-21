@@ -1,1 +1,7 @@
 /nbproject/private/
+/diff.jpg
+/images/*.jpg
+/*.log
+/node_modules
+/Logs
+/package-lock.json
