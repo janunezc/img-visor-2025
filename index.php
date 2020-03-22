@@ -45,57 +45,21 @@ if ($apiCommand == "getnames") {
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <style>
-            .slidecontainer {
-                width: 100%;
-            }
-
-            .slider {
-                -webkit-appearance: none;
-                width: 100%;
-                height: 25px;
-                background: #d3d3d3;
-                outline: none;
-                opacity: 0.7;
-                -webkit-transition: .2s;
-                transition: opacity .2s;
-            }
-
-            .slider:hover {
-                opacity: 1;
-            }
-
-            .slider::-webkit-slider-thumb {
-                -webkit-appearance: none;
-                appearance: none;
-                width: 25px;
-                height: 25px;
-                background: #4CAF50;
-                cursor: pointer;
-            }
-
-            .slider::-moz-range-thumb {
-                width: 25px;
-                height: 25px;
-                background: #4CAF50;
-                cursor: pointer;
+            .image-thumbnail{
+                width:24%;
+                display:inline-block;
+                border-color: gray;
+                border-style: solid;
+                border-width: 1px;
+                margin:5px;
             }
         </style>
     </head>
     <body style="text-align:center">
-        <h1><pre>img-visor <?php echo $version; ?></pre></h1>
-        <button id="btnFastRewind" class="btn btn-primary"><i class="fas fa-fast-backward"></i></button>
-        <button id="btnBack" class="btn btn-primary"><i class="fas fa-backward"></i></button>
-        <button id="btnPause" class="btn btn-primary"><i class="fas fa-play"></i></button>
-        <button id="btnForward" class="btn btn-primary"><i class="fas fa-forward"></i></button>
-        <button id="btnFastForward" class="btn btn-primary"><i class="fas fa-fast-forward"></i></button>
-        <pre id="imgData"> - </pre>
-
-        <div class="slidecontainer">
-            <input id="sliderX" type="range" min="1" max="1" value="1" style="width:400px" disabled>    
-            <!--<input type="range" min="1" max="100" value="50" class="slider" id="myRange">-->
+        <h1><pre>img-visor Timeline<?php echo $version; ?></pre></h1>
+        <div id="divImages">
         </div>
-
-        <img id="theImage" style="min-width: 400px; max-width:800px; width:100%; margin:0 auto; display:none;" src="" alt="..." />
+        <button id="cmdLoadMore" class="btn btn-primary">Load More...</button>
 
         <script src="https://kit.fontawesome.com/db2d8f91f5.js"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>
@@ -104,146 +68,71 @@ if ($apiCommand == "getnames") {
 
         <script type="text/javascript">
             $(document).ready(function () {
-                var filesArray = [];
-                var timer;
+                let imageNames = [];
+
                 setupEvents();
+                retrieveImageNames();
 
+                /***
+                 * Loads available image names into imageNames variable.
+                 * @returns {undefined}
+                 */
+                function retrieveImageNames() {
+                    $("#cmdLoadMore").html("loading...");
 
-                var index = 0;
-                var paused = true;
-
-                loadImagesList();
-
-                function loadImagesList() {
-                    $("#imgData").html("Loading images list...");
-                    var jqxhr = $.ajax("index.php?apiCommand=getnames")
+                    $.ajax("index.php?apiCommand=getnames")
                             .done(function (data) {
-                                //filesArray = (data.sort());
-                                filesArray = (data);
-                                $("#sliderX").attr("max", filesArray.length);
-                                updateImage();
-                                timerFunction();
+                                imageNames = (data);
+                                loadImages(150);
+                                $("#status").html("Images found: " + data.length);
                             })
                             .fail(function (err) {
                                 console.log("error", err);
                             })
                             .always(function () {});
-
                 }
+
+                var nextIndex = 0;
+                var lastIndex = 0;
+
+                function formatDateTime(dtText) {
+                    let year = dtText.substring(0, 4);
+                    let month = dtText.substring(4, 6);
+                    let day = dtText.substring(6, 8);
+                    let hour = dtText.substring(8, 10);
+                    let minute = dtText.substring(10, 12);
+                    return year + "-" + month + "-" + day + " " + hour + ":" + minute;
+                }
+
+                function loadImages(qty) {
+                    $("#cmdLoadMore").html("loading...");
+                    if (nextIndex === 0)
+                        nextIndex = imageNames.length - 1;
+                    console.log("-------------------", "RETREIVING IMAGES", qty, nextIndex);
+                    for (let idx = nextIndex; (idx >= nextIndex - qty) && idx >= 0; idx--) {
+                        console.log(imageNames[idx], idx);
+                        let imgPath = "./" + imageNames[idx];
+                        let dateTimeText = imgPath.substring(imgPath.indexOf("sc_") + 3, imgPath.indexOf("sc_") + 15);
+                        let q = idx;
+                        dateTimeText = formatDateTime(dateTimeText) + " (" + (q) + ")";
+                        let imgHTMLCode = "<div id='div-tn-" + idx + "' class='image-thumbnail'>" +
+                                "<a target='_blank' href='" + imgPath + "'><img id='img-" + idx + "' style='width:100%;' src='" + imgPath + "'></img></a>&nbsp;" +
+                                dateTimeText;
+                        $("#divImages").html($("#divImages").html() + imgHTMLCode);
+                        lastIndex = idx;
+                    }
+
+                    nextIndex = lastIndex - 1;
+                    $("#cmdLoadMore").html("Load More");
+                }
+
                 function setupEvents() {
-                    $('input[type=range]').on('input', function () {
-                        $(this).trigger('change');
+                    $("#cmdLoadMore").click(function () {
+                        $("#cmdLoadMore").html("loading...");
+                        loadImages(150);
                     });
-
-                    $("#sliderX").change(respondToSliderChange);
-
-                    $("#btnPause").click(function () {
-                        paused = !paused;
-                        if (paused) {
-                            $("#btnPause i").removeClass("fa-pause").addClass("fa-play");
-                        } else {
-                            $("#btnPause i").removeClass("fa-play").addClass("fa-pause");
-                        }
-                        setTimer();
-                    });
-
-                    $("#btnBack").click(goBack);
-                    $("#btnForward").click(advance);
-
-                    $("#btnFastRewind").click(goBackTen);
-                    $("#btnFastForward").click(advanceTen);
-
-
-                    $("#theImage").on("load", setTimer);
-
-                }
-                function respondToSliderChange() {
-
-                    console.log("CHANGE DETECTED",
-                            $("#sliderX").value,
-                            $(this).val(),
-                            filesArray[$(this).val()]
-                            );
-                    index = 1 * $(this).val() - 1;
-                    updateImage();
                 }
 
-                function setTimer() {
-                    clearTimeout(timer);
-                    timer = setTimeout(timerFunction, 300);
-                }
-
-                function advance() {
-                    if (index < filesArray.length - 1) {
-                        index++;
-                    } else {
-                        index = 0;
-                    }
-
-                    $("#sliderX").val(index);
-                    updateImage();
-                }
-
-                function advanceTen() {
-                    if (index < filesArray.length - 10) {
-                        index += 10;
-                    } else {
-                        index = filesArray.length - 1;
-                    }
-
-                    $("#sliderX").val(index);
-                    updateImage();
-                }
-
-                function goBackTen() {
-                    if (index > 10) {
-                        index = index - 10;
-                    } else {
-                        index = 0
-                    }
-
-                    $("#sliderX").val(index);
-                    updateImage();
-                }
-
-                function goBack() {
-                    if (index > 0) {
-                        index--;
-                    } else {
-                        index = filesArray.length - 1;
-                    }
-
-                    $("#sliderX").val(index);
-                    updateImage();
-                }
-
-                var timingLimiter;
-                var previousIndex = -1;
-                function updateImage() {
-                    var pictureNumber = index + 1;
-                    console.log(pictureNumber);
-                    $("#imgData").html("IMG#: " + pictureNumber + " OF " + filesArray.length + "<br />" + filesArray[index]);
-                    $("#theImage").show();
-                    $("#sliderX").removeAttr("disabled");
-
-                    if (previousIndex !== index) {
-                        previousIndex = index;
-                        if (timingLimiter) {
-                            clearTimeout(timingLimiter);
-                        }
-                        timingLimiter = setTimeout(function () {
-                            $("#theImage").attr("src", "" + filesArray[index]);
-                        }, 400);
-                    }
-
-                }
-
-                function timerFunction() {
-                    updateImage();
-                    if (!paused) {
-                        advance();
-                    }
-                }
             });
         </script>
     </body>
