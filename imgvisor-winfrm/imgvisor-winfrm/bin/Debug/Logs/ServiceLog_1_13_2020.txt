@@ -1,0 +1,108 @@
+1/13/2020 9:14:39 PM result:
+1/13/2020 9:14:39 PM result:E:\git\bitbucket\img-visor\imgvisor-winfrm\imgvisor-winfrm\bin\Debug>echo off 
+1/13/2020 9:14:39 PM result:CALCULATING NAME
+1/13/2020 9:14:39 PM result:SUBFILENAME CALCULATED AS 20200113-211439
+1/13/2020 9:14:39 PM result:SC_FILENAME = "E:\crmk_audit_jn\sc_20200113-211439_magick.jpg"
+1/13/2020 9:14:39 PM result:TAKING SCREENSHOT
+1/13/2020 9:14:39 PM result:COMPLETE!
+1/13/2020 9:14:40 PM Capture call returned!
+1/13/2020 9:14:49 PM result:
+1/13/2020 9:14:49 PM result:E:\git\bitbucket\img-visor\imgvisor-winfrm\imgvisor-winfrm\bin\Debug>echo off 
+1/13/2020 9:14:49 PM result:CALCULATING NAME
+1/13/2020 9:14:49 PM result:SUBFILENAME CALCULATED AS 20200113-211449
+1/13/2020 9:14:49 PM result:SC_FILENAME = "E:\crmk_audit_jn\sc_20200113-211449_magick.jpg"
+1/13/2020 9:14:49 PM result:TAKING SCREENSHOT
+1/13/2020 9:14:49 PM result:COMPLETE!
+1/13/2020 9:14:49 PM Capture call returned!
+1/13/2020 9:14:59 PM result:
+1/13/2020 9:14:59 PM result:E:\git\bitbucket\img-visor\imgvisor-winfrm\imgvisor-winfrm\bin\Debug>echo off 
+1/13/2020 9:14:59 PM result:CALCULATING NAME
+1/13/2020 9:14:59 PM result:SUBFILENAME CALCULATED AS 20200113-211459
+1/13/2020 9:14:59 PM result:SC_FILENAME = "E:\crmk_audit_jn\sc_20200113-211459_magick.jpg"
+1/13/2020 9:14:59 PM result:TAKING SCREENSHOT
+1/13/2020 9:14:59 PM result:COMPLETE!
+1/13/2020 9:14:59 PM Capture call returned!
+1/13/2020 9:15:55 PM Capture call returned!
+1/13/2020 9:15:59 PM Capture call returned!
+1/13/2020 9:16:01 PM Capture call returned!
+1/13/2020 9:16:01 PM Capture call returned!
+1/13/2020 9:16:03 PM Capture call returned!
+1/13/2020 9:16:04 PM Capture call returned!
+1/13/2020 9:20:45 PM Service V.1954 is started at 1/13/2020 9:20:45 PM
+1/13/2020 9:20:46 PM Capturing Screenshot...
+1/13/2020 9:20:46 PM Capture call returned!
+1/13/2020 9:20:46 PM Capture call returned!
+1/13/2020 9:21:01 PM Capturing Screenshot...
+1/13/2020 9:21:01 PM Capture call returned!
+1/13/2020 9:21:01 PM Capture call returned!
+1/13/2020 9:21:16 PM Capturing Screenshot...
+1/13/2020 9:21:16 PM Capture call returned!
+1/13/2020 9:21:16 PM Capture call returned!
+1/13/2020 9:25:10 PM Service V.1954 is started at 1/13/2020 9:25:10 PM
+1/13/2020 9:25:11 PM Capturing Screenshot...
+1/13/2020 9:25:12 PM Capture call returned!
+1/13/2020 9:25:12 PM Capture call returned!
+1/13/2020 9:25:33 PM Service V.1954 is started at 1/13/2020 9:25:33 PM
+1/13/2020 9:25:34 PM Capturing Screenshot...
+1/13/2020 9:25:34 PM Capture call returned!
+1/13/2020 9:25:34 PM Capture call returned!
+1/13/2020 9:25:49 PM Capturing Screenshot...
+1/13/2020 9:25:49 PM Capture call returned!
+1/13/2020 9:25:49 PM Capture call returned!
+1/13/2020 9:26:35 PM Service V.1954 is started at 1/13/2020 9:26:35 PM
+1/13/2020 9:26:36 PM Capturing Screenshot...
+1/13/2020 9:26:36 PM Capture call returned!
+1/13/2020 9:26:36 PM Capture call returned!
+1/13/2020 9:29:29 PM Service V.1954 is started at 1/13/2020 9:29:29 PM
+1/13/2020 9:29:30 PM Capturing Screenshot...
+1/13/2020 9:29:30 PM Capture call returned!
+1/13/2020 9:29:30 PM Capture call returned!
+1/13/2020 9:29:45 PM Capturing Screenshot...
+1/13/2020 9:29:45 PM Capture call returned!
+1/13/2020 9:29:45 PM Capture call returned!
+1/13/2020 9:30:00 PM Capturing Screenshot...
+1/13/2020 9:30:00 PM Capture call returned!
+1/13/2020 9:30:00 PM Capture call returned!
+1/13/2020 9:30:15 PM Capturing Screenshot...
+1/13/2020 9:30:15 PM Capture call returned!
+1/13/2020 9:30:15 PM Capture call returned!
+1/13/2020 9:30:30 PM Capturing Screenshot...
+1/13/2020 9:30:30 PM Capture call returned!
+1/13/2020 9:30:30 PM Capture call returned!
+1/13/2020 9:30:45 PM Capturing Screenshot...
+1/13/2020 9:30:45 PM Capture call returned!
+1/13/2020 9:30:45 PM Capture call returned!
+1/13/2020 9:31:00 PM Capturing Screenshot...
+1/13/2020 9:31:00 PM Capture call returned!
+1/13/2020 9:31:00 PM Capture call returned!
+1/13/2020 9:31:15 PM Capturing Screenshot...
+1/13/2020 9:31:15 PM Capture call returned!
+1/13/2020 9:31:15 PM Capture call returned!
+1/13/2020 9:31:30 PM Capturing Screenshot...
+1/13/2020 9:31:30 PM Capture call returned!
+1/13/2020 9:31:30 PM Capture call returned!
+1/13/2020 9:31:45 PM Capturing Screenshot...
+1/13/2020 9:31:45 PM Capture call returned!
+1/13/2020 9:31:45 PM Capture call returned!
+1/13/2020 9:32:00 PM Capturing Screenshot...
+1/13/2020 9:32:00 PM Capture call returned!
+1/13/2020 9:32:00 PM Capture call returned!
+1/13/2020 9:32:15 PM Capturing Screenshot...
+1/13/2020 9:32:15 PM Capture call returned!
+1/13/2020 9:32:15 PM Capture call returned!
+1/13/2020 9:32:30 PM Capturing Screenshot...
+1/13/2020 9:32:30 PM Capture call returned!
+1/13/2020 9:32:30 PM Capture call returned!
+1/13/2020 9:32:45 PM Capturing Screenshot...
+1/13/2020 9:32:45 PM Capture call returned!
+1/13/2020 9:32:45 PM Capture call returned!
+1/13/2020 9:33:00 PM Capturing Screenshot...
+1/13/2020 9:33:00 PM Capture call returned!
+1/13/2020 9:33:00 PM Capture call returned!
+1/13/2020 9:34:55 PM Service V.1954 is started at 1/13/2020 9:34:55 PM
+1/13/2020 9:34:56 PM Capturing Screenshot...
+1/13/2020 9:34:57 PM Capture call returned!
+1/13/2020 9:34:57 PM Capture call returned!
+1/13/2020 9:35:11 PM Capturing Screenshot...
+1/13/2020 9:35:12 PM Capture call returned!
+1/13/2020 9:35:12 PM Capture call returned!

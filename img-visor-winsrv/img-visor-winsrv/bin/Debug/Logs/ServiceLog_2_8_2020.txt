@@ -1,0 +1,32 @@
+2/8/2020 7:20:49 PM Service V.1954 is started at 2/8/2020 7:20:49 PM
+2/8/2020 7:20:50 PM Capturing Screenshot...
+2/8/2020 7:20:50 PM result:
+2/8/2020 7:20:50 PM result:C:\WINDOWS\system32>echo off 
+2/8/2020 7:20:50 PM result:CALCULATING NAME
+2/8/2020 7:20:50 PM result:SUBFILENAME CALCULATED AS 20200208-192050
+2/8/2020 7:20:50 PM result:SC_FILENAME = "E:\crmk_audit_jn\sc_20200208-192050_magick.jpg"
+2/8/2020 7:20:50 PM result:TAKING SCREENSHOT
+2/8/2020 7:20:51 PM result:COMPLETE!
+2/8/2020 7:20:51 PM Capture call returned!
+2/8/2020 7:20:51 PM Capture call returned!
+2/8/2020 7:21:05 PM Capturing Screenshot...
+2/8/2020 7:21:05 PM result:
+2/8/2020 7:21:05 PM result:C:\WINDOWS\system32>echo off 
+2/8/2020 7:21:05 PM result:CALCULATING NAME
+2/8/2020 7:21:05 PM result:SUBFILENAME CALCULATED AS 20200208-192105
+2/8/2020 7:21:05 PM result:SC_FILENAME = "E:\crmk_audit_jn\sc_20200208-192105_magick.jpg"
+2/8/2020 7:21:05 PM result:TAKING SCREENSHOT
+2/8/2020 7:21:06 PM result:COMPLETE!
+2/8/2020 7:21:06 PM Capture call returned!
+2/8/2020 7:21:06 PM Capture call returned!
+2/8/2020 7:21:20 PM Capturing Screenshot...
+2/8/2020 7:21:20 PM result:
+2/8/2020 7:21:20 PM result:C:\WINDOWS\system32>echo off 
+2/8/2020 7:21:20 PM result:CALCULATING NAME
+2/8/2020 7:21:20 PM result:SUBFILENAME CALCULATED AS 20200208-192120
+2/8/2020 7:21:20 PM result:SC_FILENAME = "E:\crmk_audit_jn\sc_20200208-192120_magick.jpg"
+2/8/2020 7:21:20 PM result:TAKING SCREENSHOT
+2/8/2020 7:21:21 PM result:COMPLETE!
+2/8/2020 7:21:21 PM Capture call returned!
+2/8/2020 7:21:21 PM Capture call returned!
+2/8/2020 7:21:27 PM Service is stopped at 2/8/2020 7:21:27 PM

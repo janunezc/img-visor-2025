@@ -1,0 +1,122 @@
+1/13/2020 9:06:21 PM Service V.1954 is started at 1/13/2020 9:06:21 PM
+1/13/2020 9:06:22 PM Capturing Screenshot...
+1/13/2020 9:06:22 PM result:
+1/13/2020 9:06:22 PM result:C:\WINDOWS\system32>echo off 
+1/13/2020 9:06:22 PM result:CALCULATING NAME
+1/13/2020 9:06:22 PM result:SUBFILENAME CALCULATED AS 20200113-210622
+1/13/2020 9:06:22 PM result:SC_FILENAME = "E:\crmk_audit_jn\sc_20200113-210622_magick.jpg"
+1/13/2020 9:06:22 PM result:TAKING SCREENSHOT
+1/13/2020 9:06:22 PM result:COMPLETE!
+1/13/2020 9:06:22 PM Capture call returned!
+1/13/2020 9:06:22 PM Capture call returned!
+1/13/2020 9:06:37 PM Capturing Screenshot...
+1/13/2020 9:06:37 PM result:
+1/13/2020 9:06:37 PM result:C:\WINDOWS\system32>echo off 
+1/13/2020 9:06:37 PM result:CALCULATING NAME
+1/13/2020 9:06:37 PM result:SUBFILENAME CALCULATED AS 20200113-210637
+1/13/2020 9:06:37 PM result:SC_FILENAME = "E:\crmk_audit_jn\sc_20200113-210637_magick.jpg"
+1/13/2020 9:06:37 PM result:TAKING SCREENSHOT
+1/13/2020 9:06:37 PM result:COMPLETE!
+1/13/2020 9:06:37 PM Capture call returned!
+1/13/2020 9:06:37 PM Capture call returned!
+1/13/2020 9:06:52 PM Capturing Screenshot...
+1/13/2020 9:06:52 PM result:
+1/13/2020 9:06:52 PM result:C:\WINDOWS\system32>echo off 
+1/13/2020 9:06:52 PM result:CALCULATING NAME
+1/13/2020 9:06:52 PM result:SUBFILENAME CALCULATED AS 20200113-210652
+1/13/2020 9:06:52 PM result:SC_FILENAME = "E:\crmk_audit_jn\sc_20200113-210652_magick.jpg"
+1/13/2020 9:06:52 PM result:TAKING SCREENSHOT
+1/13/2020 9:06:52 PM result:COMPLETE!
+1/13/2020 9:06:52 PM Capture call returned!
+1/13/2020 9:06:52 PM Capture call returned!
+1/13/2020 9:07:07 PM Capturing Screenshot...
+1/13/2020 9:07:07 PM result:
+1/13/2020 9:07:07 PM result:C:\WINDOWS\system32>echo off 
+1/13/2020 9:07:07 PM result:CALCULATING NAME
+1/13/2020 9:07:07 PM result:SUBFILENAME CALCULATED AS 20200113-210707
+1/13/2020 9:07:07 PM result:SC_FILENAME = "E:\crmk_audit_jn\sc_20200113-210707_magick.jpg"
+1/13/2020 9:07:07 PM result:TAKING SCREENSHOT
+1/13/2020 9:07:07 PM result:COMPLETE!
+1/13/2020 9:07:07 PM Capture call returned!
+1/13/2020 9:07:07 PM Capture call returned!
+1/13/2020 9:07:22 PM Capturing Screenshot...
+1/13/2020 9:07:22 PM result:
+1/13/2020 9:07:22 PM result:C:\WINDOWS\system32>echo off 
+1/13/2020 9:07:22 PM result:CALCULATING NAME
+1/13/2020 9:07:22 PM result:SUBFILENAME CALCULATED AS 20200113-210722
+1/13/2020 9:07:22 PM result:SC_FILENAME = "E:\crmk_audit_jn\sc_20200113-210722_magick.jpg"
+1/13/2020 9:07:22 PM result:TAKING SCREENSHOT
+1/13/2020 9:07:22 PM result:COMPLETE!
+1/13/2020 9:07:22 PM Capture call returned!
+1/13/2020 9:07:22 PM Capture call returned!
+1/13/2020 9:07:37 PM Capturing Screenshot...
+1/13/2020 9:07:37 PM result:
+1/13/2020 9:07:37 PM result:C:\WINDOWS\system32>echo off 
+1/13/2020 9:07:37 PM result:CALCULATING NAME
+1/13/2020 9:07:37 PM result:SUBFILENAME CALCULATED AS 20200113-210737
+1/13/2020 9:07:37 PM result:SC_FILENAME = "E:\crmk_audit_jn\sc_20200113-210737_magick.jpg"
+1/13/2020 9:07:37 PM result:TAKING SCREENSHOT
+1/13/2020 9:07:37 PM result:COMPLETE!
+1/13/2020 9:07:37 PM Capture call returned!
+1/13/2020 9:07:37 PM Capture call returned!
+1/13/2020 9:07:52 PM Capturing Screenshot...
+1/13/2020 9:07:52 PM result:
+1/13/2020 9:07:52 PM result:C:\WINDOWS\system32>echo off 
+1/13/2020 9:07:52 PM result:CALCULATING NAME
+1/13/2020 9:07:52 PM result:SUBFILENAME CALCULATED AS 20200113-210752
+1/13/2020 9:07:52 PM result:SC_FILENAME = "E:\crmk_audit_jn\sc_20200113-210752_magick.jpg"
+1/13/2020 9:07:52 PM result:TAKING SCREENSHOT
+1/13/2020 9:07:52 PM result:COMPLETE!
+1/13/2020 9:07:52 PM Capture call returned!
+1/13/2020 9:07:52 PM Capture call returned!
+1/13/2020 9:08:07 PM Capturing Screenshot...
+1/13/2020 9:08:07 PM result:
+1/13/2020 9:08:07 PM result:C:\WINDOWS\system32>echo off 
+1/13/2020 9:08:07 PM result:CALCULATING NAME
+1/13/2020 9:08:07 PM result:SUBFILENAME CALCULATED AS 20200113-210807
+1/13/2020 9:08:07 PM result:SC_FILENAME = "E:\crmk_audit_jn\sc_20200113-210807_magick.jpg"
+1/13/2020 9:08:07 PM result:TAKING SCREENSHOT
+1/13/2020 9:08:07 PM result:COMPLETE!
+1/13/2020 9:08:07 PM Capture call returned!
+1/13/2020 9:08:07 PM Capture call returned!
+1/13/2020 9:08:22 PM Capturing Screenshot...
+1/13/2020 9:08:22 PM result:
+1/13/2020 9:08:22 PM result:C:\WINDOWS\system32>echo off 
+1/13/2020 9:08:22 PM result:CALCULATING NAME
+1/13/2020 9:08:22 PM result:SUBFILENAME CALCULATED AS 20200113-210822
+1/13/2020 9:08:22 PM result:SC_FILENAME = "E:\crmk_audit_jn\sc_20200113-210822_magick.jpg"
+1/13/2020 9:08:22 PM result:TAKING SCREENSHOT
+1/13/2020 9:08:22 PM result:COMPLETE!
+1/13/2020 9:08:22 PM Capture call returned!
+1/13/2020 9:08:22 PM Capture call returned!
+1/13/2020 9:08:37 PM Capturing Screenshot...
+1/13/2020 9:08:37 PM result:
+1/13/2020 9:08:37 PM result:C:\WINDOWS\system32>echo off 
+1/13/2020 9:08:37 PM result:CALCULATING NAME
+1/13/2020 9:08:37 PM result:SUBFILENAME CALCULATED AS 20200113-210837
+1/13/2020 9:08:37 PM result:SC_FILENAME = "E:\crmk_audit_jn\sc_20200113-210837_magick.jpg"
+1/13/2020 9:08:37 PM result:TAKING SCREENSHOT
+1/13/2020 9:08:37 PM result:COMPLETE!
+1/13/2020 9:08:37 PM Capture call returned!
+1/13/2020 9:08:37 PM Capture call returned!
+1/13/2020 9:08:52 PM Capturing Screenshot...
+1/13/2020 9:08:52 PM result:
+1/13/2020 9:08:52 PM result:C:\WINDOWS\system32>echo off 
+1/13/2020 9:08:52 PM result:CALCULATING NAME
+1/13/2020 9:08:52 PM result:SUBFILENAME CALCULATED AS 20200113-210852
+1/13/2020 9:08:52 PM result:SC_FILENAME = "E:\crmk_audit_jn\sc_20200113-210852_magick.jpg"
+1/13/2020 9:08:52 PM result:TAKING SCREENSHOT
+1/13/2020 9:08:52 PM result:COMPLETE!
+1/13/2020 9:08:52 PM Capture call returned!
+1/13/2020 9:08:52 PM Capture call returned!
+1/13/2020 9:09:07 PM Capturing Screenshot...
+1/13/2020 9:09:07 PM result:
+1/13/2020 9:09:07 PM result:C:\WINDOWS\system32>echo off 
+1/13/2020 9:09:07 PM result:CALCULATING NAME
+1/13/2020 9:09:07 PM result:SUBFILENAME CALCULATED AS 20200113-210907
+1/13/2020 9:09:07 PM result:SC_FILENAME = "E:\crmk_audit_jn\sc_20200113-210907_magick.jpg"
+1/13/2020 9:09:07 PM result:TAKING SCREENSHOT
+1/13/2020 9:09:07 PM result:COMPLETE!
+1/13/2020 9:09:07 PM Capture call returned!
+1/13/2020 9:09:07 PM Capture call returned!
+1/13/2020 9:09:15 PM Service is stopped at 1/13/2020 9:09:15 PM

@@ -1,0 +1,7 @@
+E:\git\bitbucket\img-visor\img-visor-winsrv\img-visor-winsrv\obj\Debug\img_visor_winsrv.ProjectInstaller.resources
+E:\git\bitbucket\img-visor\img-visor-winsrv\img-visor-winsrv\obj\Debug\img-visor-winsrv.csproj.GenerateResource.cache
+E:\git\bitbucket\img-visor\img-visor-winsrv\img-visor-winsrv\bin\Debug\img-visor-winsrv.exe.config
+E:\git\bitbucket\img-visor\img-visor-winsrv\img-visor-winsrv\bin\Debug\img-visor-winsrv.exe
+E:\git\bitbucket\img-visor\img-visor-winsrv\img-visor-winsrv\bin\Debug\img-visor-winsrv.pdb
+E:\git\bitbucket\img-visor\img-visor-winsrv\img-visor-winsrv\obj\Debug\img-visor-winsrv.exe
+E:\git\bitbucket\img-visor\img-visor-winsrv\img-visor-winsrv\obj\Debug\img-visor-winsrv.pdb

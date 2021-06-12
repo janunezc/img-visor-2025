@@ -1,0 +1,9 @@
+E:\git\bitbucket\img-visor\imgvisor-winfrm\imgvisor-winfrm\bin\Debug\imgvisor-winfrm.exe.config
+E:\git\bitbucket\img-visor\imgvisor-winfrm\imgvisor-winfrm\bin\Debug\imgvisor-winfrm.exe
+E:\git\bitbucket\img-visor\imgvisor-winfrm\imgvisor-winfrm\bin\Debug\imgvisor-winfrm.pdb
+E:\git\bitbucket\img-visor\imgvisor-winfrm\imgvisor-winfrm\obj\Debug\imgvisor_winfrm.Form1.resources
+E:\git\bitbucket\img-visor\imgvisor-winfrm\imgvisor-winfrm\obj\Debug\imgvisor_winfrm.Properties.Resources.resources
+E:\git\bitbucket\img-visor\imgvisor-winfrm\imgvisor-winfrm\obj\Debug\imgvisor-winfrm.csproj.GenerateResource.cache
+E:\git\bitbucket\img-visor\imgvisor-winfrm\imgvisor-winfrm\obj\Debug\imgvisor-winfrm.exe
+E:\git\bitbucket\img-visor\imgvisor-winfrm\imgvisor-winfrm\obj\Debug\imgvisor-winfrm.pdb
+E:\git\bitbucket\img-visor\imgvisor-winfrm\imgvisor-winfrm\obj\Debug\imgvisor-winfrm.csprojAssemblyReference.cache
