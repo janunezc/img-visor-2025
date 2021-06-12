@@ -103,19 +103,29 @@ if ($apiCommand == "getnames") {
                     let minute = dtText.substring(10, 12);
                     return year + "-" + month + "-" + day + " " + hour + ":" + minute;
                 }
-
+                
+                var prevDate = undefined;
                 function loadImages(qty) {
                     $("#cmdLoadMore").html("loading...");
                     if (nextIndex === 0)
                         nextIndex = imageNames.length - 1;
                     console.log("-------------------", "RETREIVING IMAGES", qty, nextIndex);
+                    
                     for (let idx = nextIndex; (idx >= nextIndex - qty) && idx >= 0; idx--) {
                         console.log(imageNames[idx], idx);
                         let imgPath = "./" + imageNames[idx];
                         let dateTimeText = imgPath.substring(imgPath.indexOf("sc_") + 3, imgPath.indexOf("sc_") + 15);
                         let q = idx;
                         dateTimeText = formatDateTime(dateTimeText) + " (" + (q) + ")";
-                        let imgHTMLCode = "<div id='div-tn-" + idx + "' class='image-thumbnail'>" +
+                        let curDate = dateTimeText.substring(0,10);
+                        let imgHTMLCode = "";
+                        
+                        if(prevDate!==curDate){
+                            prevDate = curDate;
+                            imgHTMLCode = "<hr /> <h1>" + curDate + "</h1>";
+                            
+                        }
+                        imgHTMLCode += "<div id='div-tn-" + idx + "' class='image-thumbnail'>" +
                                 "<a target='_blank' href='" + imgPath + "'><img id='img-" + idx + "' style='width:100%;' src='" + imgPath + "'></img></a>&nbsp;" +
                                 dateTimeText;
                         $("#divImages").html($("#divImages").html() + imgHTMLCode);
