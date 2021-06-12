@@ -7,3 +7,12 @@ E:\git\bitbucket\img-visor\imgvisor-winfrm\imgvisor-winfrm\obj\Debug\imgvisor-wi
 E:\git\bitbucket\img-visor\imgvisor-winfrm\imgvisor-winfrm\obj\Debug\imgvisor-winfrm.exe
 E:\git\bitbucket\img-visor\imgvisor-winfrm\imgvisor-winfrm\obj\Debug\imgvisor-winfrm.pdb
 E:\git\bitbucket\img-visor\imgvisor-winfrm\imgvisor-winfrm\obj\Debug\imgvisor-winfrm.csprojAssemblyReference.cache
+C:\Users\josea\git\img-visor\imgvisor-winfrm\imgvisor-winfrm\bin\Debug\imgvisor-winfrm.exe.config
+C:\Users\josea\git\img-visor\imgvisor-winfrm\imgvisor-winfrm\bin\Debug\imgvisor-winfrm.exe
+C:\Users\josea\git\img-visor\imgvisor-winfrm\imgvisor-winfrm\bin\Debug\imgvisor-winfrm.pdb
+C:\Users\josea\git\img-visor\imgvisor-winfrm\imgvisor-winfrm\obj\Debug\imgvisor_winfrm.Form1.resources
+C:\Users\josea\git\img-visor\imgvisor-winfrm\imgvisor-winfrm\obj\Debug\imgvisor_winfrm.Properties.Resources.resources
+C:\Users\josea\git\img-visor\imgvisor-winfrm\imgvisor-winfrm\obj\Debug\imgvisor-winfrm.csproj.GenerateResource.cache
+C:\Users\josea\git\img-visor\imgvisor-winfrm\imgvisor-winfrm\obj\Debug\imgvisor-winfrm.csproj.CoreCompileInputs.cache
+C:\Users\josea\git\img-visor\imgvisor-winfrm\imgvisor-winfrm\obj\Debug\imgvisor-winfrm.exe
+C:\Users\josea\git\img-visor\imgvisor-winfrm\imgvisor-winfrm\obj\Debug\imgvisor-winfrm.pdb

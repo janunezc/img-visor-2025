@@ -18,21 +18,38 @@ namespace imgvisor_winfrm
     {
         //System.Timers.Timer timer = new System.Timers.Timer();
         System.Windows.Forms.Timer wftimer;
-        const int TIME_TO_MINIMIZE = 15000;
+        System.Windows.Forms.Timer minTimer;
 
         public Form1()
         {
             InitializeComponent();
 
             int intervalms = Int32.Parse(ConfigurationManager.AppSettings.Get("intervalms"));
+            int minIntervalms = Int32.Parse(ConfigurationManager.AppSettings.Get("minintervalms"));
 
             WriteToFile("Service V.1954 is started at " + DateTime.Now);
 
             wftimer = new System.Windows.Forms.Timer();
             wftimer.Interval = intervalms;
             wftimer.Tick += new EventHandler(timer_Tick);
+
+            minTimer = new System.Windows.Forms.Timer();
+            minTimer.Interval = minIntervalms;
+            minTimer.Tick += new EventHandler(minimize);
             executeRoutines();
             wftimer.Start();
+            minTimer.Start();
+        }
+
+        private bool firstTime = true;
+        private void minimize(object sender, EventArgs e)
+        {
+            if (firstTime)
+            {
+                this.WindowState = FormWindowState.Normal;
+                firstTime = false;
+            }
+            this.WindowState = FormWindowState.Minimized;
         }
         private void timer_Tick(object sender, EventArgs e)
         {
@@ -50,8 +67,8 @@ namespace imgvisor_winfrm
                 notifyIcon1.Icon = new System.Drawing.Icon(Path.GetFullPath(@"image\graph.ico"));
                 notifyIcon1.Text = "IMGVisor Control";
                 notifyIcon1.Visible = true;
-                notifyIcon1.BalloonTipTitle = "Welcome IMG Visor Utility";
-                notifyIcon1.BalloonTipText = "Click Here to see details";
+                notifyIcon1.BalloonTipTitle = "Bienvenido a Imagevisor";
+                notifyIcon1.BalloonTipText = "Su sistema está protegido";
                 notifyIcon1.ShowBalloonTip(100);
             }
             catch (Exception ex)
@@ -159,7 +176,7 @@ namespace imgvisor_winfrm
         private void Form1_Load(object sender, EventArgs e)
         {
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
-            Displaynotify();
+            //Displaynotify();
 
         }
 
