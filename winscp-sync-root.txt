@@ -1,7 +1,0 @@
-#Official WINSCP Site: https://winscp.net/eng/docs/scripting
-
-option batch abort
-option confirm off
-open ftp://img-visor-jn:l55N=P9D4!9b@costaricamakers.com 
-synchronize remote -neweronly e:\.imgvisor /
-exit

@@ -1,0 +1,50 @@
+A. Componentes y Tecnología
+
+1.  Perpetuador (Windows Scheduled Task)
+2.  Orquestador (Hidden Winform / Taskbar Icon)
+3.  Capturador  (NodeJS, Imagemagick)
+3.1 Filtro de Similitud (NodeJS/Batch)
+4.  Sincronizador Externo (WinSCP)
+4.1 Mantenimiento Externo (NodeJS/Request)
+
+5.  Hospedaje Externo (LAMP)
+6.  Visualizador Web (PHP)
+7.  Mantenimiento Externo (PHP)
+
+8.  Invisibilizador de Ejecución (VBS)
+
+B. Archivos
+
+1. Perpetuador: Tarea de referencia XML
+2. Orquestador:
+2.1 imgvisor-winfrm.exe: Programa ejecutable residente en memoria
+2.2 imgvisor-winfrm.config: Archivo de configuración. Define las tareas que el orquestador va a invocar y los tiempos.
+
+3.  Capturador: Ejecuta la captura de imágenes y se deshace de imágenes demasiado similares.
+3.1 magick-capture.vbs:         Ejecuta una llamada silente del archivo magick-capture.bat
+3.2 magick-capture.bat:         Ejecuta una llamada de node al script magick-capture.js registrando log en magick-capture.js.log
+3.3 magick-capture.js:          Utiliza moment.js para definir el nombre del archivo de captura de imagen basado en el formato YYYYMMDDHHmmss
+                                Realiza una llamada a magic-capture-exec.bat pasando como parámetro el nombre de archivo definido.
+3.4 magick-capture-exec.bat:    Realiza la captura de pantalla y la compara con la captura anterior para retenerla si no es similar
+                                o descartarla en caso de mucha similitud. Utiliza utilitarios de Imagemagick.   
+                                Paso 1: Identificar archivo de última captura
+                                Paso 2: Realizar nueva captura
+                                Paso 3: Comparar nueva captura contra captura anterior
+                                Paso 4: Eliminar nueva captura si la similitud es alta.
+
+4.  Sincronizador Externo mediante WinSCP
+4.1 winscp-sync.vbs:            Ejecuta una llamada silente del archivo winscp-sync.bat
+4.2 winscp-sync.bat:            Realiza una llamada a winscp.com pasando como parámetro el script winscp-sync.txt
+                                Registra log en: winscp-sync.log
+4.3 winscp-sync.txt:            Script (guión) Define el proceso de sincronización entre la carpeta local ~/images y la carpeta
+                                remota /images usando una cuenta FTP
+                                (!) ESTE ARCHIVO CONTIENE CREDENCIALES DE LA CUENTA FTP
+
+5. Hospedaje Externo:   Provee funcionalidad web para acceder a los archivos de imágenes almacenados en la web.
+5.1 index.php:          Provee acceso progresivo a las imágenes
+5.2 maintenance.php     Busca archivos viejos y los elimina.
+
+
+
+
+

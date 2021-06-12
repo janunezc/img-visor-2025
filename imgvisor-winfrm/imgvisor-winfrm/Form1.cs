@@ -14,9 +14,10 @@ using System.Configuration;
 
 namespace imgvisor_winfrm
 {
+
     public partial class Form1 : Form
     {
-        //System.Timers.Timer timer = new System.Timers.Timer();
+        public string VERSION = "V.21.0612.0609";
         System.Windows.Forms.Timer wftimer;
         System.Windows.Forms.Timer minTimer;
 
@@ -27,7 +28,7 @@ namespace imgvisor_winfrm
             int intervalms = Int32.Parse(ConfigurationManager.AppSettings.Get("intervalms"));
             int minIntervalms = Int32.Parse(ConfigurationManager.AppSettings.Get("minintervalms"));
 
-            WriteToFile("Service V.1954 is started at " + DateTime.Now);
+            WriteToFile("Service " + this.VERSION + " is started at " + DateTime.Now);
 
             wftimer = new System.Windows.Forms.Timer();
             wftimer.Interval = intervalms;
