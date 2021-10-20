@@ -1,6 +1,6 @@
 ﻿namespace imgvisor_winfrm
 {
-    partial class Form1
+    partial class imageVisorForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(imageVisorForm));
             this.dataSet1 = new System.Data.DataSet();
             this.label1 = new System.Windows.Forms.Label();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
@@ -49,9 +49,10 @@
             this.label1.Location = new System.Drawing.Point(17, 16);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(184, 17);
+            this.label1.Size = new System.Drawing.Size(196, 17);
             this.label1.TabIndex = 0;
-            this.label1.Text = "IMGVISOR.V.21.0612.0544";
+            this.label1.Text = "IMGVISOR.V.1.1.2110191942";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // notifyIcon1
             // 
@@ -59,6 +60,7 @@
             this.notifyIcon1.Text = this.label1.Text;
             this.notifyIcon1.Visible = true;
             this.notifyIcon1.Click += new System.EventHandler(this.notifyIcon1_Click);
+            this.notifyIcon1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDoubleClick);
             // 
             // statusStrip1
             // 
@@ -78,16 +80,16 @@
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(221, 20);
             this.toolStripStatusLabel1.Text = "Respaldo visual de operaciones.";
             // 
-            // Form1
+            // imageVisorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(475, 129);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "imageVisorForm";
             this.Opacity = 0.5D;
             this.ShowIcon = false;
             this.Text = "IMGVISOR-WINFRM";

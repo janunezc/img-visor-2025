@@ -14,7 +14,7 @@ namespace imgvisor_winfrm
         [STAThread]
         static void Main()
         {          
-            SingleInstance.SingleApplication.Run(new Form1());
+            SingleInstance.SingleApplication.Run(new imageVisorForm());
         }
 
 

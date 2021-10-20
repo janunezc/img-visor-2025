@@ -16,4 +16,4 @@ C:\Users\josea\git\img-visor\imgvisor-winfrm\imgvisor-winfrm\obj\Release\imgviso
 C:\Users\josea\git\img-visor\imgvisor-winfrm\imgvisor-winfrm\obj\Release\imgvisor-winfrm.csproj.CoreCompileInputs.cache
 C:\Users\josea\git\img-visor\imgvisor-winfrm\imgvisor-winfrm\obj\Release\imgvisor-winfrm.exe
 C:\Users\josea\git\img-visor\imgvisor-winfrm\imgvisor-winfrm\obj\Release\imgvisor-winfrm.pdb
-C:\Users\josea\git\img-visor\imgvisor-winfrm\imgvisor-winfrm\obj\Release\imgvisor-winfrm.csprojAssemblyReference.cache
+C:\Users\josea\git\img-visor\imgvisor-winfrm\imgvisor-winfrm\obj\Release\imgvisor-winfrm.csproj.AssemblyReference.cache

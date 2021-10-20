@@ -15,13 +15,13 @@ using System.Configuration;
 namespace imgvisor_winfrm
 {
 
-    public partial class Form1 : Form
+    public partial class imageVisorForm : Form
     {
         public string VERSION = "V.21.0612.0609";
-        System.Windows.Forms.Timer wftimer;
-        System.Windows.Forms.Timer minTimer;
+        readonly System.Windows.Forms.Timer wftimer;
+        readonly System.Windows.Forms.Timer minTimer;
 
-        public Form1()
+        public imageVisorForm()
         {
             InitializeComponent();
 
@@ -74,7 +74,7 @@ namespace imgvisor_winfrm
             }
             catch (Exception ex)
             {
-                var x = ex.Message;
+                WriteToFile("NotifyIcon Exception!" + ex.Message);
             }
         }
 
@@ -85,7 +85,7 @@ namespace imgvisor_winfrm
             get
             {
                 CreateParams myCp = base.CreateParams;
-                myCp.ClassStyle = myCp.ClassStyle | CP_NOCLOSE_BUTTON;
+                myCp.ClassStyle |= CP_NOCLOSE_BUTTON;
                 return myCp;
             }
         }
@@ -104,7 +104,7 @@ namespace imgvisor_winfrm
                     }
                     catch (Exception ex)
                     {
-
+                        WriteToFile("Settings Exception!" + ex.Message);
                     }
 
                     if (!String.IsNullOrEmpty(stepValue))
@@ -200,6 +200,16 @@ namespace imgvisor_winfrm
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
             notifyIcon1.Visible = false;
+        }
+
+        private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

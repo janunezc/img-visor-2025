@@ -1,3 +1,5 @@
+
+--------------------------------------------------------------------------------------------------------------------------------------------
 A. Componentes y Tecnología
 
 1.  Perpetuador (Windows Scheduled Task)
@@ -13,6 +15,7 @@ A. Componentes y Tecnología
 
 8.  Invisibilizador de Ejecución (VBS)
 
+--------------------------------------------------------------------------------------------------------------------------------------------
 B. Archivos
 
 1. Perpetuador: Tarea de referencia XML
@@ -42,9 +45,5 @@ B. Archivos
 
 5. Hospedaje Externo:   Provee funcionalidad web para acceder a los archivos de imágenes almacenados en la web.
 5.1 index.php:          Provee acceso progresivo a las imágenes
-5.2 maintenance.php     Busca archivos viejos y los elimina.
-
-
-
-
-
+5.2 maintenance.php     Busca archivos viejos y los elimina del sistema de hospedaje. Es invocado remotamente mediante una llamada 
+                        HTTP GET.
