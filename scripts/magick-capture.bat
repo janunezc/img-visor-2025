@@ -1,1 +1,1 @@
-node e:\.imgvisor\magick-capture.js >>magick-capture.js.log
+node magick-capture.js >>magick-capture.js.log

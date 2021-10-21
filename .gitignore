@@ -13,3 +13,9 @@
 /scripts/magick-capture.log
 /scripts/magick-compare-result.txt
 /scripts/test.log
+/scripts/magick-capture.js.log
+/scripts/images/
+/scripts/diff.jpg
+/scripts/magic-capture-exec.log
+/scripts/package-lock.json
+/scripts/node_modules/
