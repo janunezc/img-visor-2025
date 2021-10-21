@@ -1,1 +1,1 @@
-node e:\.imgvisor\maintenance-call.js > e:\.imgvisor\maintenance-call.log
+node maintenance-call.js > maintenance-call.log

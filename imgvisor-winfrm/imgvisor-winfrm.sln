@@ -7,6 +7,23 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "imgvisor-winfrm", "imgvisor
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A6EB552A-22FA-4209-8458-A44DA4C898A6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{8A5BD5D3-5F24-4BF2-9470-F857D69F3541}"
+	ProjectSection(SolutionItems) = preProject
+		..\scripts\magick-capture-exec.bat = ..\scripts\magick-capture-exec.bat
+		..\scripts\magick-capture.bat = ..\scripts\magick-capture.bat
+		..\scripts\magick-capture.js = ..\scripts\magick-capture.js
+		..\scripts\magick-capture.vbs = ..\scripts\magick-capture.vbs
+		..\scripts\maintenance-call.bat = ..\scripts\maintenance-call.bat
+		..\scripts\maintenance-call.js = ..\scripts\maintenance-call.js
+		..\scripts\maintenance-call.vbs = ..\scripts\maintenance-call.vbs
+		..\scripts\maintenance.php = ..\scripts\maintenance.php
+		..\scripts\package.json = ..\scripts\package.json
+		..\scripts\README.md = ..\scripts\README.md
+		..\scripts\winscp-sync.bat = ..\scripts\winscp-sync.bat
+		..\scripts\winscp-sync.txt = ..\scripts\winscp-sync.txt
+		..\scripts\winscp-sync.vbs = ..\scripts\winscp-sync.vbs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +37,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8A5BD5D3-5F24-4BF2-9470-F857D69F3541} = {A6EB552A-22FA-4209-8458-A44DA4C898A6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {73710758-2AD0-48CF-B5B7-29132AF2CAF4}

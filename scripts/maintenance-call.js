@@ -1,10 +1,10 @@
 const request = require('request');
-const url = "https://costaricamakers.com/img-visor-jn/maintenance.php";
+const url = "http://img-visor-jn.nunez-technologies.com/maintenance.php";
 
 request({
     url: url,
     headers: {
-        "Authorization": "Basic aW1nLXZpc29yLWpuOiFBN1hzQWYuTzBVUg=="
+        "Authorization": "Basic aW1nLXZpc29yLWpuLTQ4OjJJSUQsMCRnYTJdSA=="
     }
 },
         function (error, response, body) {

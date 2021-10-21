@@ -19,3 +19,5 @@
 /scripts/magic-capture-exec.log
 /scripts/package-lock.json
 /scripts/node_modules/
+/scripts/winscp-sync.log
+/scripts/maintenance-call.log

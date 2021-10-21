@@ -2,6 +2,6 @@
 
 option batch abort
 option confirm off
-open ftp://img-visor-jn:l55N=P9D4!9b@costaricamakers.com 
-synchronize remote -neweronly e:\.imgvisor\images /images
+open ftp://img-visor-jn@nunez-technologies.com:69o-zQe~PDAj@ftp.nunez-technologies.com
+synchronize remote -neweronly images /images
 exit
