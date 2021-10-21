@@ -40,3 +40,42 @@
 20/10/2021 22:01:26 Capture call returned!
 20/10/2021 22:01:26 Capture call returned!
 20/10/2021 22:01:26 Execution Complete!
+20/10/2021 22:02:25 Executing Routines...
+20/10/2021 22:02:26 Capture call returned!
+20/10/2021 22:02:26 Capture call returned!
+20/10/2021 22:02:26 Capture call returned!
+20/10/2021 22:02:26 Execution Complete!
+20/10/2021 22:04:35 Service V.21.0612.0609 is started at 20/10/2021 22:04:35
+20/10/2021 22:04:35 Capture call returned!
+20/10/2021 22:04:36 Capture call returned!
+20/10/2021 22:04:37 Capture call returned!
+20/10/2021 22:05:37 Executing Routines...
+20/10/2021 22:05:37 Capture call returned!
+20/10/2021 22:05:37 Capture call returned!
+20/10/2021 22:05:37 Capture call returned!
+20/10/2021 22:05:37 Execution Complete!
+20/10/2021 22:06:37 Executing Routines...
+20/10/2021 22:06:37 Capture call returned!
+20/10/2021 22:06:38 Capture call returned!
+20/10/2021 22:06:38 Capture call returned!
+20/10/2021 22:06:38 Execution Complete!
+20/10/2021 22:07:37 Executing Routines...
+20/10/2021 22:07:37 Capture call returned!
+20/10/2021 22:07:37 Capture call returned!
+20/10/2021 22:07:38 Capture call returned!
+20/10/2021 22:07:38 Execution Complete!
+20/10/2021 22:08:37 Executing Routines...
+20/10/2021 22:08:37 Capture call returned!
+20/10/2021 22:08:37 Capture call returned!
+20/10/2021 22:08:37 Capture call returned!
+20/10/2021 22:08:37 Execution Complete!
+20/10/2021 22:09:37 Executing Routines...
+20/10/2021 22:09:37 Capture call returned!
+20/10/2021 22:09:37 Capture call returned!
+20/10/2021 22:09:37 Capture call returned!
+20/10/2021 22:09:37 Execution Complete!
+20/10/2021 22:10:37 Executing Routines...
+20/10/2021 22:10:37 Capture call returned!
+20/10/2021 22:10:37 Capture call returned!
+20/10/2021 22:10:37 Capture call returned!
+20/10/2021 22:10:37 Execution Complete!
