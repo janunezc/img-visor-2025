@@ -22,3 +22,5 @@
 /scripts/winscp-sync.log
 /scripts/maintenance-call.log
 /scripts/Logs/
+/scripts/webcam-shot-reduce.log
+/scripts/webcam-shot-take.js.log
