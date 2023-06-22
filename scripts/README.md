@@ -1,33 +1,33 @@
 # img-visor
 
-Este es un script PHP (un solo archivo) muy sencillo, capaz de convertir un folder web en un reproductor de im·genes en secuencia.
+Este es un script PHP (un solo archivo) muy sencillo, capaz de convertir un folder web en un reproductor de imÔøΩgenes en secuencia.
 
 This is a very simple PHP Script (one file) capable of converting a web folder containing images into a image sequence player.
 
 ## LICENCIA DE USO
 
-ESTE ES UN ARCHIVO DE USO DID¡CTICO QUE SE DISTRIBUYE DE FORMA LIBRE BAJO LA LICENCIA MIT.
+ESTE ES UN ARCHIVO DE USO DID√ÅCTICO QUE SE DISTRIBUYE DE FORMA LIBRE BAJO LA LICENCIA MIT.
 VER: https://en.wikipedia.org/wiki/MIT_License
-ESTE PROGRAMA ES BRINDADO DE FORMA GRATUITA Y LIBRE CON LA MEJOR INTENCI”N DE FACILITAR SU APRENDIZAJE Y USO.
+ESTE PROGRAMA ES BRINDADO DE FORMA GRATUITA Y LIBRE CON LA MEJOR INTENCIÔøΩN DE FACILITAR SU APRENDIZAJE Y USO.
 NO ACEPTAMOS NINGUN TIPO DE RESPONSABILIDAD POR EL USO QUE SE LE DE A ESTE PROGRAMA.
 
 ************************************************************************************
-LICENCIA MIT (ESPA—OL)
+LICENCIA MIT (ESPAÔøΩOL)
 Copyright 2019 COSTARICAMAKERS.COM
 
 Se concede permiso por la presente, libre de cargos, a cualquier persona que obtenga una copia 
-de este software y de los archivos de documentaciÛn asociados (el "Software"), a utilizar
-el Software sin restricciÛn, incluyendo sin limitaciÛn los derechos 
+de este software y de los archivos de documentaciÔøΩn asociados (el "Software"), a utilizar
+el Software sin restricciÔøΩn, incluyendo sin limitaciÔøΩn los derechos 
 a usar, copiar, modificar, fusionar, publicar, distribuir, sublicenciar, y/o vender copias del Software,
 y a permitir a las personas a las que se les proporcione el Software a hacer lo mismo, sujeto a las siguientes condiciones:
 
-El aviso de copyright anterior y este aviso de permiso se incluir·n en todas las copias o partes sustanciales del Software.
+El aviso de copyright anterior y este aviso de permiso se incluirÔøΩn en todas las copias o partes sustanciales del Software.
 
-EL SOFTWARE SE PROPORCIONA "COMO EST¡", SIN GARANTÕA DE NING⁄N TIPO, EXPRESA O IMPLÕCITA, 
-INCLUYENDO PERO NO LIMITADO A GARANTÕAS DE COMERCIALIZACI”N, IDONEIDAD PARA UN PROP”SITO
-PARTICULAR E INCUMPLIMIENTO. EN NING⁄N CASO LOS AUTORES O PROPIETARIOS DE LOS DERECHOS DE AUTOR 
-SER¡N RESPONSABLES DE NINGUNA RECLAMACI”N, DA—OS U OTRAS RESPONSABILIDADES, YA SEA EN UNA ACCI”N DE CONTRATO,
-AGRAVIO O CUALQUIER OTRO MOTIVO, DERIVADAS DE, FUERA DE O EN CONEXI”N CON EL SOFTWARE O SU USO U OTRO TIPO DE ACCIONES 
+EL SOFTWARE SE PROPORCIONA "COMO ESTÔøΩ", SIN GARANTÔøΩA DE NINGÔøΩN TIPO, EXPRESA O IMPLÔøΩCITA, 
+INCLUYENDO PERO NO LIMITADO A GARANTÔøΩAS DE COMERCIALIZACIÔøΩN, IDONEIDAD PARA UN PROPÔøΩSITO
+PARTICULAR E INCUMPLIMIENTO. EN NINGÔøΩN CASO LOS AUTORES O PROPIETARIOS DE LOS DERECHOS DE AUTOR 
+SERÔøΩN RESPONSABLES DE NINGUNA RECLAMACIÔøΩN, DAÔøΩOS U OTRAS RESPONSABILIDADES, YA SEA EN UNA ACCIÔøΩN DE CONTRATO,
+AGRAVIO O CUALQUIER OTRO MOTIVO, DERIVADAS DE, FUERA DE O EN CONEXIÔøΩN CON EL SOFTWARE O SU USO U OTRO TIPO DE ACCIONES 
 EN EL SOFTWARE.
 
 ************************************************************************************
