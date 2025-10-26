@@ -1,26 +1,121 @@
-/nbproject/private/
-/diff.jpg
-/images/*.jpg
-/*.log
-/node_modules
-/Logs
-/package-lock.json
-/magick-compare-result.txt
-/_archive
-/imgvisor-winfrm/imgvisor-winfrm/bin
-/imgvisor-winfrm/.vs/
-/imgvisor-winfrm/imgvisor-winfrm/obj/
-/scripts/magick-capture.log
-/scripts/magick-compare-result.txt
-/scripts/test.log
-/scripts/magick-capture.js.log
-/scripts/images/
-/scripts/diff.jpg
-/scripts/magic-capture-exec.log
-/scripts/package-lock.json
-/scripts/node_modules/
-/scripts/winscp-sync.log
-/scripts/maintenance-call.log
-/scripts/Logs/
-/scripts/webcam-shot-reduce.log
-/scripts/webcam-shot-take.js.log
+############################################################
+# Visual Studio / .NET defaults
+############################################################
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+[Ll]ogs/
+.vs/
+*.user
+*.userosscache
+*.suo
+*.rsuser
+*.sln.docstates
+
+# NuGet / packages
+*.nupkg
+packages/
+.nuget/
+*.deps.json
+*.runtimeconfig.json
+project.lock.json
+
+# Compiled binaries
+*.dll
+*.exe
+*.pdb
+*.cache
+*.mdb
+*.ilk
+*.lib
+*.appx
+*.msi
+*.dbg
+
+# Test / coverage
+[Tt]est[Rr]esult*/
+*.trx
+*.coverage
+*.coveragexml
+*.codecoverage
+
+# IDE / editor settings
+.vscode/
+.idea/
+*.DotSettings.user
+_ReSharper*/
+*.ncrunchsolution
+*.nunit.xml
+
+# OS files
+Thumbs.db
+.DS_Store
+desktop.ini
+Icon?
+
+# Signing
+*.pfx
+*.snk
+# Keep manifest (needed for DPI)
+!*.manifest
+
+############################################################
+# img-visor-specific exclusions
+############################################################
+
+# === Runtime data ===
+# Screenshot and webcam captures (runtime output)
+scripts/images/
+scripts/images_temp/
+scripts/base_images/temp/
+scripts/*.jpg
+scripts/*.png
+scripts/*.bmp
+scripts/*.diff.jpg
+
+# Logs and metrics
+scripts/Logs/
+scripts/*.log
+scripts/*.txt
+!scripts/winscp-sync.txt   # keep your FTP config file
+
+# FTP sync working files
+scripts/*.ini
+scripts/*.tmp
+scripts/*.bak
+
+# Node modules / transient assets
+scripts/node_modules/
+scripts/package-lock.json
+
+# Maintenance or backup files
+scripts/backup*/
+scripts/old*/
+
+# Output from publish / builds
+publish/
+dist/
+artifacts/
+out/
+
+############################################################
+# Keep key config and code
+############################################################
+# Keep source
+!*.cs
+!*.csproj
+!*.sln
+!*.config
+!*.json
+!*.manifest
+!*.md
+!LICENSE*
+!README*
+
+############################################################
+# Optional: explicit ignores for local development
+############################################################
+# Keep developer notes private
+notes/
+todo.txt
