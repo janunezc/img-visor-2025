@@ -1,0 +1,1 @@
+node maintenance-call.js > c:\temp\maintenance-call.log

@@ -1,0 +1,7 @@
+#Official WINSCP Site: https://winscp.net/eng/docs/scripting
+
+option batch abort
+option confirm off
+open ftp://img-visor-jn@nunez-technologies.com:69o-zQe~PDAj@ftp.nunez-technologies.com
+synchronize remote -neweronly "%LOCALAPPDATA%\img-visor\backlog" /images
+exit
