@@ -11,11 +11,7 @@ namespace img_visor_25
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
-            //ApplicationConfiguration.Initialize();
-            //Application.Run(new Form1());
-            SingleInstance.SingleApplication.Run(new  img_visor_25.Form1());
+            SingleInstance.SingleApplication.Run(new img_visor_25_form());
 
         }
     }

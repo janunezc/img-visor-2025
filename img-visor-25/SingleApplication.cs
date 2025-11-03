@@ -47,9 +47,13 @@ namespace SingleInstance
                 // and location. Also check that the process has a valid
                 // window handle in this session to filter out other user's
                 // processes.
-                if (_process.Id != process.Id &&
-                    _process.MainModule.FileName == process.MainModule.FileName &&
-                    _process.MainWindowHandle != IntPtr.Zero)
+                string? currentFileName = process.MainModule?.FileName;
+                string? otherFileName = _process.MainModule?.FileName;
+                if (_process.Id != process.Id
+                    && currentFileName != null
+                    && otherFileName != null
+                    && otherFileName == currentFileName
+                    && _process.MainWindowHandle != IntPtr.Zero)
                 {
                     hWnd = _process.MainWindowHandle;
                     break;

@@ -1,6 +1,6 @@
 ﻿namespace img_visor_25
 {
-    partial class Form1
+    partial class img_visor_25_form
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(img_visor_25_form));
             label1 = new Label();
             statusStrip1 = new StatusStrip();
             statusStrip = new ToolStripStatusLabel();
@@ -41,11 +41,11 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(83, 18);
+            label1.Location = new Point(43, 20);
             label1.Name = "label1";
-            label1.Size = new Size(141, 20);
+            label1.Size = new Size(224, 20);
             label1.TabIndex = 0;
-            label1.Text = "img-visor-25 Ver.1.0";
+            label1.Text = "img-visor-25 Ver.1.0.2511011324";
             // 
             // statusStrip1
             // 

@@ -5,14 +5,14 @@ using System.Windows.Forms;
 
 namespace img_visor_25
 {
-    public partial class Form1 : Form
+    public partial class img_visor_25_form : Form
     {
 
         public string VERSION = "V.21.0612.0609";
         readonly System.Windows.Forms.Timer wftimer;
         readonly System.Windows.Forms.Timer minTimer;
 
-        public Form1()
+        public img_visor_25_form()
         {
             InitializeComponent();
             statusStrip.Text = "Welcome! System is inactive.";
@@ -83,17 +83,17 @@ namespace img_visor_25
             }
         }
 
-        //private const int CP_NOCLOSE_BUTTON = 0x200;
+        private const int CP_NOCLOSE_BUTTON = 0x200;
 
-        //protected override CreateParams CreateParams
-        //{
-        //    get
-        //    {
-        //        CreateParams myCp = base.CreateParams;
-        //        myCp.ClassStyle |= CP_NOCLOSE_BUTTON;
-        //        return myCp;
-        //    }
-        //}
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams myCp = base.CreateParams;
+                myCp.ClassStyle |= CP_NOCLOSE_BUTTON;
+                return myCp;
+            }
+        }
 
 
         private void captureAndCompare()
@@ -161,7 +161,7 @@ namespace img_visor_25
         {
             string pwd = Environment.ExpandEnvironmentVariables(ConfigurationManager.AppSettings.Get("caller_scripts_pwd") ?? "");
             string winscp_caller = Environment.ExpandEnvironmentVariables(ConfigurationManager.AppSettings.Get("winscp_caller") ?? "");
-            
+
             executeStep(winscp_caller, pwd);
         }
 
@@ -197,14 +197,24 @@ namespace img_visor_25
 
         public void WriteToFile(string Message)
         {
+
+            string basePath = Path.Combine(
+                Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
+                "img-visor",
+                "logs"
+            );
+            if (!Directory.Exists(basePath))
+            {
+                Directory.CreateDirectory(basePath);
+            }
+
             Message = DateTime.Now + " " + Message;
 
-            string path = AppDomain.CurrentDomain.BaseDirectory + "\\Logs";
-            if (!Directory.Exists(path))
-            {
-                Directory.CreateDirectory(path);
-            }
-            string filepath = AppDomain.CurrentDomain.BaseDirectory + "\\Logs\\ServiceLog_" + DateTime.Now.Date.ToShortDateString().Replace('/', '_') + ".txt";
+            string filepath = Path.Combine(
+                basePath,
+                $"ServiceLog_{DateTime.Now:yyyy_MM_dd}.txt"
+            );
+
             if (!File.Exists(filepath))
             {
                 // Create a file to write to.   
@@ -276,31 +286,33 @@ namespace img_visor_25
 
         static long ComparePixels(string leftPath, string rightPath, out int totalPixels)
         {
-            using var left = new Bitmap(leftPath);
-            using var right = new Bitmap(rightPath);
-            if (left.Width != right.Width || left.Height != right.Height)
-                Console.WriteLine("Images have different dimensions.");
+            try
+            {
+                using var left = new Bitmap(leftPath);
+                using var right = new Bitmap(rightPath);
+                if (left.Width != right.Width || left.Height != right.Height)
+                    Console.WriteLine("Images have different dimensions.");
 
-            int w = left.Width, h = left.Height;
-            totalPixels = w * h;
-            long diff = 0;
+                int w = left.Width, h = left.Height;
+                totalPixels = w * h;
+                long diff = 0;
 
-            // Simple, clear version—good enough for a first pass
-            for (int y = 0; y < h; y++)
-                for (int x = 0; x < w; x++)
-                    if (left.GetPixel(x, y).ToArgb() != right.GetPixel(x, y).ToArgb())
-                        diff++;
+                // Simple, clear version—good enough for a first pass
+                for (int y = 0; y < h; y++)
+                    for (int x = 0; x < w; x++)
+                        if (left.GetPixel(x, y).ToArgb() != right.GetPixel(x, y).ToArgb())
+                            diff++;
 
-            return diff;
+                return diff;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error comparing images: " + ex.Message);
+                totalPixels = 1024 * 768;
+                long pixelsToReturn = 1024 * 768;
+
+                return pixelsToReturn;
+            }
         }
-
     }
-
-
-
-
-
-
-
-
 }
