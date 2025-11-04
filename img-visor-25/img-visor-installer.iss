@@ -43,14 +43,12 @@ Source: "{#PublishDir}\*"; DestDir: "{app}"; Flags: recursesubdirs createallsubd
 
 ; Scripts folder copied as-is to Program Files\img-visor\scripts
 Source: "{#ScriptsDir}\*"; DestDir: "{app}\scripts"; Flags: recursesubdirs createallsubdirs ignoreversion
-Source: "{#ImageDir}\*"; DestDir: "{app}\image"; Flags: recursesubdirs createallsubdirs ignoreversion
 
 ; --- Create local data directories ---
 [Dirs]
 ; Program Files base directories (Windows default ACLs already restrict write access)
 Name: "{app}"
 Name: "{app}\scripts"
-Name: "{app}\image"
 
 ; LocalAppData working folders for the app
 Name: "{localappdata}\img-visor"; Flags: uninsalwaysuninstall
