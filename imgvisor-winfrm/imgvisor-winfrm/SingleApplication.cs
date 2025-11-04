@@ -96,19 +96,6 @@ namespace SingleInstance
 		}
 
 		/// <summary>
-		/// for console base application
-		/// </summary>
-		/// <returns></returns>
-		public static bool Run()
-		{
-			if(IsAlreadyRunning()) 
-			{
-				return false;
-			}
-			return true;
-		}
-
-		/// <summary>
 		/// check if given exe alread running or not
 		/// </summary>
 		/// <returns>returns true if already running</returns>

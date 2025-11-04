@@ -6,6 +6,8 @@ using System.Diagnostics;
 using System.Threading;
 using System.Reflection;
 using System.IO;
+using static img_visor_25.img_visor_25_form;
+using img_visor_25;
 
 namespace SingleInstance
 {
@@ -37,6 +39,7 @@ namespace SingleInstance
         /// <returns></returns>
         private static IntPtr GetCurrentInstanceWindowHandle()
         {
+            img_visor_25_form.WriteToFile("GetCurrentInstanceWindowHandle");
             IntPtr hWnd = IntPtr.Zero;
             Process process = Process.GetCurrentProcess();
             Process[] processes = Process.GetProcessesByName(process.ProcessName);
@@ -66,6 +69,7 @@ namespace SingleInstance
         /// </summary>
         private static void SwitchToCurrentInstance()
         {
+            img_visor_25_form.WriteToFile("SwitchToCurrentInstance");
             IntPtr hWnd = GetCurrentInstanceWindowHandle();
             if (hWnd != IntPtr.Zero)
             {
@@ -90,27 +94,20 @@ namespace SingleInstance
         /// <returns>true if no previous instance is running</returns>
         public static bool Run(System.Windows.Forms.Form frmMain)
         {
+            img_visor_25_form.WriteToFile("Run");
             if (IsAlreadyRunning())
             {
+                img_visor_25_form.WriteToFile("Already Runnong...");
                 //set focus on previously running app
                 SwitchToCurrentInstance();
                 return false;
             }
-            Application.Run(frmMain);
-            return true;
-        }
-
-        /// <summary>
-        /// for console base application
-        /// </summary>
-        /// <returns></returns>
-        public static bool Run()
-        {
-            if (IsAlreadyRunning())
+            else
             {
-                return false;
+                img_visor_25_form.WriteToFile("New Execution");
+                Application.Run(frmMain);
+                return true;
             }
-            return true;
         }
 
         /// <summary>

@@ -54,7 +54,10 @@ namespace img_visor_25
                 this.WindowState = FormWindowState.Normal;
                 firstTime = false;
             }
-            this.WindowState = FormWindowState.Minimized;
+            else
+            {
+                this.WindowState = FormWindowState.Minimized;
+            }
         }
         private void timer_Tick(object? sender, EventArgs e)
         {
@@ -65,22 +68,6 @@ namespace img_visor_25
             vbsSteps();
             WriteToFile("Execution Complete!");
 
-        }
-        protected void Displaynotify()
-        {
-            try
-            {
-                notifyIcon.Icon = new System.Drawing.Icon(Path.GetFullPath(@"image\graph.ico"));
-                notifyIcon.Text = "IMGVisor Control";
-                notifyIcon.Visible = false;
-                notifyIcon.BalloonTipTitle = "Bienvenido a Imagevisor";
-                notifyIcon.BalloonTipText = "Su sistema está protegido";
-                notifyIcon.ShowBalloonTip(100);
-            }
-            catch (Exception ex)
-            {
-                WriteToFile("NotifyIcon Exception!" + ex.Message);
-            }
         }
 
         private const int CP_NOCLOSE_BUTTON = 0x200;
@@ -195,7 +182,7 @@ namespace img_visor_25
 
         }
 
-        public void WriteToFile(string Message)
+        public static void WriteToFile(string Message)
         {
 
             string basePath = Path.Combine(
@@ -235,14 +222,9 @@ namespace img_visor_25
         private void Form1_Load(object sender, EventArgs e)
         {
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
-            Displaynotify();
-
         }
 
-        private void notifyIcon_Click(object sender, EventArgs e)
-        {
-            this.Show();
-        }
+
 
         private void Form1_Resize(object sender, EventArgs e)
         {
@@ -254,12 +236,6 @@ namespace img_visor_25
                 Hide();
             }
         }
-
-        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            notifyIcon.Visible = false;
-        }
-
 
         static void CaptureAllScreens(string outPath, int jpegQuality)
         {

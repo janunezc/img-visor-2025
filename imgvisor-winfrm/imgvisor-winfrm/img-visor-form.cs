@@ -61,22 +61,7 @@ namespace imgvisor_winfrm
             WriteToFile("Execution Complete!");
 
         }
-        protected void Displaynotify()
-        {
-            try
-            {
-                notifyIcon1.Icon = new System.Drawing.Icon(Path.GetFullPath(@"image\graph.ico"));
-                notifyIcon1.Text = "IMGVisor Control";
-                notifyIcon1.Visible = true;
-                notifyIcon1.BalloonTipTitle = "Bienvenido a Imagevisor";
-                notifyIcon1.BalloonTipText = "Su sistema está protegido";
-                notifyIcon1.ShowBalloonTip(100);
-            }
-            catch (Exception ex)
-            {
-                WriteToFile("NotifyIcon Exception!" + ex.Message);
-            }
-        }
+
 
         private const int CP_NOCLOSE_BUTTON = 0x200;
 

@@ -28,13 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(img_visor_25_form));
             label1 = new Label();
             statusStrip1 = new StatusStrip();
             statusStrip = new ToolStripStatusLabel();
             toolStripProgressBar1 = new ToolStripProgressBar();
-            notifyIcon = new NotifyIcon(components);
             statusStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -68,17 +65,7 @@
             toolStripProgressBar1.Name = "toolStripProgressBar1";
             toolStripProgressBar1.Size = new Size(100, 18);
             // 
-            // notifyIcon
-            // 
-            notifyIcon.BalloonTipIcon = ToolTipIcon.Info;
-            notifyIcon.BalloonTipText = "img-visor is running";
-            notifyIcon.BalloonTipTitle = "Welcome to img-visor";
-            notifyIcon.Icon = (Icon)resources.GetObject("notifyIcon.Icon");
-            notifyIcon.Text = "img-visor";
-            notifyIcon.Visible = true;
-            notifyIcon.Click += notifyIcon_Click;
-            // 
-            // Form1
+            // img_visor_25_form
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -86,12 +73,11 @@
             Controls.Add(statusStrip1);
             Controls.Add(label1);
             MaximizeBox = false;
-            Name = "Form1";
+            Name = "img_visor_25_form";
             Opacity = 0.8D;
             ShowIcon = false;
             Text = "img-visor-25";
             WindowState = FormWindowState.Minimized;
-            FormClosed += Form1_FormClosed;
             Load += Form1_Load;
             Resize += Form1_Resize;
             statusStrip1.ResumeLayout(false);
@@ -106,6 +92,5 @@
         private StatusStrip statusStrip1;
         private ToolStripStatusLabel statusStrip;
         private ToolStripProgressBar toolStripProgressBar1;
-        private NotifyIcon notifyIcon;
     }
 }
